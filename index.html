@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>Narratives.fm - Hear The Story They Tell Themselves</title>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <style>
+  @font-face
+  {
+  font-family: Champagne-Limousines;
+  src: url('./font/Champagne-Limousines.ttf')
+  }
+
+  html, body {
+    height: 100%;
+
+    font-family: "PT Sans";
+    /*background-image: url("./img/background.jpg");*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    blur(5px);
+  }
+  .narratives {
+    font-family: Champagne-Limousines;
+    font-size: 16px;
+  }
+  .podcast {
+     width: 300px;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 40px;
+
+     text-align: center;
+  }
+
+  .cover-art {
+    border-radius: 10px;
+       -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+            box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    margin-bottom: 10px;
+  }
+
+  .container {
+    margin-top: 30px;
+  }
+  header {
+    text-align: center;
+    background-color: #e74c3c;
+    color: #fff;
+    display: none;
+  }
+  footer {
+  bottom: 0px;
+  height: 40px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  }
+
+  #upsell {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    border:1px solid rgba(0, 0, 0, 0.18);
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+  }
+
+  #upsell h3{
+    margin-top: 0px;
+  }
+
+  #masthead {
+    display: none;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <p>Have a guest recomendation or would like to be on the show yourself? <a href = "mailto:mschrage@college.harvard.edu">Email us.</a></p>
+
+  </header>
+  <div class = "container">
+
+    <div class = "podcast" id = "harvard">
+      <img class = "cover-art" height = "300px" width = "300px" src = "./img/harvard.narratives.png">
+      <p>A weekly conversation with current undergradutes at Harvard College.</p>
+      <em>With Matt Schrage '20</em>
+    </div>
+    <div id = "upsell">
+      <h3>Join the email list for a reminder</h3>
+      <p>You'll receive a single email when the first episode is published. Nothing more, nothing less. <em>We hate spam too!</em></p>
+      <form action="/signup" style="margin-bottom:0px">
+      <div class="input-group" >
+        <input class="form-control" type="email" name="email" placeholder = "Enter your email address">
+        <span class="input-group-btn">
+          <button class="btn btn-secondary" id ="submitbtn" type="submit">Submit</button>
+        </span>
+      </div>
+      </form>
+    </div>
+    <div id = "masthead">
+      <p>Narratives are the stories we tell ourselves to make sense of our lives. They frame the things we do and provide a sense of direction, <em>of purpose</em>.</p>
+      <p>Rarely, do people open up and share their own personal narratives. <span class = "narratives">Narratives</span> is a space for that.</p>
+    <div>
+  </div>
+    <footer>
+      <!--<p>Would you like to host a podcast on the <span class = "narratives"> Narratives.fm</span> network? <a href = "#">Get in touch.</a></p>-->
+
+      <p>Cover art courtesy of Yael Saiger '19</p>
+    </footer>
+</body>
+</html>
