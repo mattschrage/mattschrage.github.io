@@ -100,13 +100,15 @@
     <div id = "upsell">
       <h3>Join the email list for a reminder</h3>
       <p>You'll receive a single email when the first episode is published. Nothing more, nothing less. <em>We hate spam too!</em></p>
-      <form action="/signup" style="margin-bottom:0px">
-      <div class="input-group" >
-        <input class="form-control" type="email" name="email" placeholder = "Enter your email address">
-        <span class="input-group-btn">
-          <button class="btn btn-secondary" id ="submitbtn" type="submit">Submit</button>
-        </span>
-      </div>
+      <form action="https://narratives.us16.list-manage.com/subscribe/post" method="POST" style="margin-bottom:0px">
+        <input type="hidden" name="u" value="421f53a93acaf5a23143df48d">
+        <input type="hidden" name="id" value="ffefd77a89">
+        <div class="input-group" >
+          <input class="form-control" type="email" name="MERGE0" placeholder = "Enter your email address">
+          <span class="input-group-btn">
+            <button class="btn btn-secondary" id ="submitbtn" type="submit">Submit</button>
+          </span>
+        </div>
       </form>
     </div>
     <div id = "masthead">
